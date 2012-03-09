@@ -1,14 +1,13 @@
 Feature: view
-	In order to see information about a particular ballet event
+	In order to see the information about a specific ballet event
 	As a user
-	I want to view a ballet listing
-	
-		Scenario: There are no ballets listed
-			Given the site has no ballet events
-			When I access the ballet listings page by clicking on the nav link
-			Then I should see a message saying there are no ballets listed
+	I want to view a ballet event
 		
-		Scenario: Ballet listings exist
+		Scenario: Ballet event exists
 			Given there is at least one ballet event listing
-			When I try to access the ballet listings page
-			Then I should see a list of ballets
+			And I am a user on the site
+			When I am on a ballet event's page
+			Then I should see a the name of the ballet event
+			And I should see a photo that is associated with the event
+			And I should see directions to that event
+			And I should see a description of the event
