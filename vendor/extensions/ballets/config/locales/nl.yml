@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      ballets:
+        title: Ballets
+    ballets:
+      admin:
+        ballets:
+          actions:
+            create_new: Maak een nieuwe Ballet
+            reorder: Wijzig de volgorde van de Ballets
+            reorder_done: Klaar met het wijzingen van de volgorde van de Ballets
+          records:
+            title: Ballets
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Ballets. Druk op 'Maak een nieuwe Ballet' om de eerste aan te maken.
+          ballet:
+            view_live_html: Bekijk deze ballet op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze ballet
+            delete: Verwijder deze ballet voor eeuwig
+      ballets:
+        show:
+          other: Andere Ballets
+  activerecord:
+    attributes:
+      'refinery/ballets/ballet':
+        title: Title
+        date: Date
+        photo: Photo
+        description: Description

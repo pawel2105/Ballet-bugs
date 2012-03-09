@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Ballets::Admin::BalletsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.ballets_admin_ballets_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_ballets_admin_ballet_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Ballets::Admin::BalletsController.sortable? && ::Refinery::Ballets::Ballet.any? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Ballets"),
+                 refinery.ballets_admin_ballets_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Ballets"),
+                 refinery.ballets_admin_ballets_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

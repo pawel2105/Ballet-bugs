@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      ballets:
+        title: Ballets
+    ballets:
+      admin:
+        ballets:
+          actions:
+            create_new: Add New Ballet
+            reorder: Reorder Ballets
+            reorder_done: Done Reordering Ballets
+          records:
+            title: Ballets
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Ballets yet. Click "Add New Ballet" to add your first ballet.
+          ballet:
+            view_live_html: View this ballet live <br/><em>(opens in a new window)</em>
+            edit: Edit this ballet
+            delete: Remove this ballet forever
+      ballets:
+        show:
+          other: Other Ballets
+  activerecord:
+    attributes:
+      'refinery/ballets/ballet':
+        title: Title
+        date: Date
+        photo: Photo
+        description: Description

@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      ballets:
+        title: Ballets
+    ballets:
+      admin:
+        ballets:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Ballet
+            reorder: Réordonner les Ballets
+            reorder_done: Fin de réordonnancement des Ballets
+          records:
+            title: Ballets
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Ballet. Cliquer sur "Créer un(e) nouve(au/l/lle) Ballet" pour créer votre premi(er/ère) ballet.'
+          ballet:
+            view_live_html: Voir ce(t/tte) ballet <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) ballet
+            delete: Supprimer définitivement ce(t/tte) ballet
+      ballets:
+        show:
+          other: Autres Ballets
+  activerecord:
+    attributes:
+      'refinery/ballets/ballet':
+        title: Title
+        date: Date
+        photo: Photo
+        description: Description

@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      ballets:
+        title: Ballets
+    ballets:
+      admin:
+        ballets:
+          actions:
+            create_new: Lag en ny Ballet
+            reorder: Endre rekkefølgen på Ballets
+            reorder_done: Ferdig å endre rekkefølgen Ballets
+          records:
+            title: Ballets
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Ballets enda. Klikk på "Lag en ny Ballet" for å legge til din første ballet.
+          ballet:
+            view_live_html: Vis hvordan denne ballet ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne ballet
+            delete: Fjern denne ballet permanent
+      ballets:
+        show:
+          other: Andre Ballets
+  activerecord:
+    attributes:
+      'refinery/ballets/ballet':
+        title: Title
+        date: Date
+        photo: Photo
+        description: Description

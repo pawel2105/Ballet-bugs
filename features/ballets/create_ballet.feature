@@ -5,7 +5,6 @@ Feature: create
 	
 		Scenario: create a listing
 			Given I am signed in as an admin
-			And I am in the admin dashboard
 			And I am on the create ballet listing page
 			When I create a ballet event
 			And I save the ballet event
